@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5d9fd6e3-5e1a-47fb-afbd-623e7cb723a1">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from rumah]]>
+	</queryString>
+	<field name="nama_pemesan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="area" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="401" height="20" uuid="42de00a2-7ab6-4217-bc7b-5bd1b8e7839e"/>
+				<text><![CDATA[nama_pemesan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="0" width="401" height="20" uuid="c5e87301-44f7-4a28-b2eb-58041e2704ef"/>
+				<text><![CDATA[area]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="43" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="401" height="20" uuid="66cb32d0-c693-4de7-b73f-442eec0c27f6"/>
+				<textFieldExpression><![CDATA[$F{nama_pemesan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="401" y="0" width="401" height="20" uuid="d42de442-c345-44e2-995b-2b75764d4709"/>
+				<textFieldExpression><![CDATA[$F{area}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
